@@ -138,3 +138,8 @@ export BAT_THEME=Catppuccin\ Macchiato
 # thefuck alias
 eval $(thefuck --alias)
 eval $(thefuck --alias fk)
+
+#docker completion
+fpath=(~/.docker/completions \\$fpath)
+autoload -Uz compinit
+compinit
