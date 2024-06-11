@@ -79,13 +79,20 @@ alias ls='ls --color'
 alias vim='nvim'
 alias c='clear'
 
+alias a='php artisan'
+alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
+alias sa='sail artisan'
+alias sc='sail composer'
+alias st='sail test'
+alias stp='sail test --parallel'
+
 alias ls='eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions'
 alias tree='eza --tree --level=2'
 
-alias escola='code /home/gnalmeida/sistemasPHP/sisoc3'
-alias concurso='code /home/gnalmeida/sistemasPHP/concurso_sgc'
-alias estoque='code /home/gnalmeida/sistemasPHP/estoque'
-alias recepcao='code /home/gnalmeida/sistemasPHP/controle_acesso'
+alias escola='code /home/gnalmeida/projetosPHP/sisoc3'
+alias concurso='code /home/gnalmeida/projetosPHP/concurso_sgc'
+alias estoque='code /home/gnalmeida/projetosPHP/estoque'
+alias recepcao='code /home/gnalmeida/projetosPHP/controle_acesso'
 
 # Shell integrations
 eval "$(fzf --zsh)"
