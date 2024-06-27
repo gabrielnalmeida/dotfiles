@@ -75,7 +75,8 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
-alias ls='ls --color'
+alias ls='eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions'
+alias tree='eza --tree --level=2'
 alias vim='nvim'
 alias c='clear'
 
@@ -85,14 +86,6 @@ alias sa='sail artisan'
 alias sc='sail composer'
 alias st='sail test'
 alias stp='sail test --parallel'
-
-alias ls='eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions'
-alias tree='eza --tree --level=2'
-
-alias escola='code /home/gnalmeida/projetosPHP/sisoc3'
-alias concurso='code /home/gnalmeida/projetosPHP/concurso_sgc'
-alias estoque='code /home/gnalmeida/projetosPHP/estoque'
-alias recepcao='code /home/gnalmeida/projetosPHP/controle_acesso'
 
 # Shell integrations
 eval "$(fzf --zsh)"
