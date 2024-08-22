@@ -27,6 +27,7 @@ zinit snippet OMZP::sudo
 zinit snippet OMZP::command-not-found
 
 #Load completions
+fpath=(~/.docker/completions \/home/gnalmeida/.local/share/zinit/completions /usr/local/share/zsh/site-functions /usr/share/zsh/site-functions /usr/share/zsh/5.9/functions /home/gnalmeida/.local/share/zinit/plugins/zsh-users---zsh-completions/src /home/gnalmeida/.local/share/zinit/plugins/Aloxaf---fzf-tab/lib)
 autoload -U compinit && compinit
 
 zinit cdreplay -q
