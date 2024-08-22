@@ -1,0 +1,14 @@
+appindicatorsupport@rgcjonas.gmail.com
+arcmenu@arcmenu.com
+blur-my-shell@aunetx
+clipboard-indicator@tudmotu.com
+dash-to-dock@micxgx.gmail.com
+extension-list@tu.berry
+gtk4-ding@smedius.gitlab.com
+impatience@gfxmonk.net
+just-perfection-desktop@just-perfection
+mprisLabel@moon-0xff.github.com
+quick-settings-tweaks@qwreey
+tilingshell@ferrarodomenico.com
+user-theme@gnome-shell-extensions.gcampax.github.com
+weatheroclock@CleoMenezesJr.github.io
