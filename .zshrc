@@ -1,5 +1,5 @@
 # Set the directory we want to store zinit and plugins
-ZINIT_HOME="${XDG_DATA_HOME:-${HOME/.local/share}}/zinit/zinit.git"
+export ZINIT_HOME="/home/gnalmeida/zinit/zinit.git"
 
 #ohmyposh
 export PATH="$HOME/.local/bin:$PATH"
@@ -27,14 +27,12 @@ zinit snippet OMZP::sudo
 zinit snippet OMZP::command-not-found
 
 #Load completions
-fpath=(~/.docker/completions \/home/gnalmeida/.local/share/zinit/completions /usr/local/share/zsh/site-functions /usr/share/zsh/site-functions /usr/share/zsh/5.9/functions /home/gnalmeida/.local/share/zinit/plugins/zsh-users---zsh-completions/src /home/gnalmeida/.local/share/zinit/plugins/Aloxaf---fzf-tab/lib)
 autoload -U compinit && compinit
 
 zinit cdreplay -q
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
-
 
 #Keybindings
 bindkey -e
@@ -70,7 +68,7 @@ alias tree='exa --tree'
 alias c='clear'
 
 # Shell integrations
-eval "$(fzf --zsh)"
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(zoxide init --cmd cd zsh)"
 
 export NVM_DIR="$HOME/.nvm"
@@ -84,3 +82,4 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
