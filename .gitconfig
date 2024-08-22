@@ -1,0 +1,29 @@
+[user]
+	email = 84048406+gabrielnalmeida@users.noreply.github.com
+	name = gnalmeida
+
+[alias]
+  st = status
+  logg = log --graph --decorate --oneline --all
+  cm = commit
+  df = diff
+  dfs = diff --staged
+
+[core]
+	pager = delta
+
+[interactive]
+	diffFilter = delta --color-only
+
+[delta]
+	navigate = true
+	side-by-side = true
+  
+[merge]
+	conflictstyle = diff3
+
+[diff]
+	colorMoved = default
+
+[init]
+	defaultBranch = main
