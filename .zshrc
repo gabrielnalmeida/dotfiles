@@ -3,7 +3,7 @@ export ZINIT_HOME="/home/gnalmeida/zinit/zinit.git"
 
 #ohmyposh
 export PATH="$HOME/.local/bin:$PATH"
-export TESSDATA_PREFIX=/usr/share/tesseract/
+export TESSDATA_PREFIX=/usr/share/tesseract-ocr/5/tessdata
 
 # Download Zinit, if it's not there yet
 if [ ! -d "$ZINIT_HOME" ]; then

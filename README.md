@@ -30,3 +30,11 @@ Para configurar o ambiente utilizando os dotfiles, siga estas etapas:
     ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
     ln -s ~/.dotfiles/ohmyposh ~/.config/ohmyposh
     ```
+
+3. Requirements
+  - zoxide - package manager
+  - eza - package manager
+  - [nvm](https://nodejs.org/en/download/package-manager)
+  - [pnpm](https://pnpm.io/installation)
+  - [ohmyposh](https://ohmyposh.dev/docs/installation/linux)
+  - [fzf](https://github.com/junegunn/fzf.git)
