@@ -3,7 +3,14 @@ export ZINIT_HOME="/home/gnalmeida/zinit/zinit.git"
 
 #ohmyposh
 export PATH="$HOME/.local/bin:$PATH"
+<<<<<<< Updated upstream
 export TESSDATA_PREFIX=/usr/share/tesseract-ocr/5/tessdata
+||||||| Stash base
+export TESSDATA_PREFIX=/usr/share/tesseract/
+=======
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+export TESSDATA_PREFIX=/usr/share/tesseract-ocr/5/tessdata
+>>>>>>> Stashed changes
 
 # Download Zinit, if it's not there yet
 if [ ! -d "$ZINIT_HOME" ]; then
@@ -83,3 +90,7 @@ case ":$PATH:" in
 esac
 # pnpm end
 
+# Display Pokemons
+if [ "$TERM_PROGRAM" != "vscode" ]; then
+    pokemon-colorscripts --no-title -r 1,3,6
+fi
