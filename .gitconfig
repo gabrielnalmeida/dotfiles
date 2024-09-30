@@ -1,6 +1,6 @@
 [user]
 	email = 84048406+gabrielnalmeida@users.noreply.github.com
-	name = gnalmeida
+	name = Gabriel Nunes de Almeida
 
 [alias]
   st = status
@@ -27,3 +27,9 @@
 
 [init]
 	defaultBranch = main
+  
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f

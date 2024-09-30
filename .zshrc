@@ -1,5 +1,6 @@
 # Set the directory we want to store zinit and plugins
-export ZINIT_HOME="/home/gnalmeida/zinit/zinit.git"
+export ZINIT_HOME="/opt/zinit/zinit.git"
+export XDG_DATA_DIRS="/var/lib/flatpak/exports/share:/home/gnalmeida/.local/share/flatpak/exports/share:$XDG_DATA_DIRS"
 
 #ohmyposh
 export PATH="$HOME/.local/bin:$PATH"
@@ -28,7 +29,7 @@ zinit snippet OMZP::sudo
 zinit snippet OMZP::command-not-found
 
 #Load completions
-autoload -U compinit && compinit
+autoload -U compinit && compinit -u
 
 zinit cdreplay -q
 
@@ -69,7 +70,7 @@ alias tree='exa --tree'
 alias c='clear'
 
 # Shell integrations
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f /opt/.fzf.zsh ] && source /opt/.fzf.zsh
 eval "$(zoxide init --cmd cd zsh)"
 
 export NVM_DIR="$HOME/.nvm"
