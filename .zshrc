@@ -1,11 +1,10 @@
 # Set the directory we want to store zinit and plugins
-export ZINIT_HOME="/opt/zinit/zinit.git"
+export ZINIT_HOME="/home/gnalmeida/zinit/zinit.git"
 export XDG_DATA_DIRS="/var/lib/flatpak/exports/share:/home/gnalmeida/.local/share/flatpak/exports/share:$XDG_DATA_DIRS"
 
 #ohmyposh
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
-export TESSDATA_PREFIX=/usr/share/tesseract-ocr/5/tessdata
 
 # Download Zinit, if it's not there yet
 if [ ! -d "$ZINIT_HOME" ]; then
@@ -30,7 +29,6 @@ zinit snippet OMZP::command-not-found
 
 #Load completions
 autoload -U compinit && compinit -u
-
 zinit cdreplay -q
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -70,20 +68,12 @@ alias tree='exa --tree'
 alias c='clear'
 
 # Shell integrations
-[ -f /opt/.fzf.zsh ] && source /opt/.fzf.zsh
+[ -f /home/gnalmeida/.fzf.zsh ] && source /home/gnalmeida/.fzf.zsh
 eval "$(zoxide init --cmd cd zsh)"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# pnpm
-export PNPM_HOME="/home/gnalmeida/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
 
 # Display Pokemons
 if [ "$TERM_PROGRAM" != "vscode" ]; then
