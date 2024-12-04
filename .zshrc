@@ -1,7 +1,3 @@
-#proxy
-export http_proxy="http://gabrielnunes.almeida:Gabrielnalmeida745500@proxy.sead.gov-se:8080"
-export https_proxy="http://gabrielnunes.almeida:Gabrielnalmeida745500@proxy.sead.gov-se:8080"
-
 # Set the directory we want to store zinit and plugins
 export ZINIT_HOME="/home/gnalmeida/zinit/zinit.git"
 export XDG_DATA_DIRS="/var/lib/flatpak/exports/share:/home/gnalmeida/.local/share/flatpak/exports/share:$XDG_DATA_DIRS"
