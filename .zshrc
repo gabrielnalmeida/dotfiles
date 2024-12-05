@@ -6,6 +6,9 @@ export XDG_DATA_DIRS="/var/lib/flatpak/exports/share:/home/gnalmeida/.local/shar
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
+#dotnet
+export PATH="$HOME/.dotnet/tools:$PATH"
+
 # Download Zinit, if it's not there yet
 if [ ! -d "$ZINIT_HOME" ]; then
     echo "ZINIT não encontrado. Instalando..."

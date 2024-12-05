@@ -27,6 +27,7 @@ Para configurar o ambiente utilizando os dotfiles, siga estas etapas:
     
     ```
     ln -s ~/.dotfiles/.zshrc ~/.zshrc
+    ln -s ~/.dotfiles/.vimrc ~/.vimrc
     ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
     ln -s ~/.dotfiles/ohmyposh ~/.config/ohmyposh
     ```
