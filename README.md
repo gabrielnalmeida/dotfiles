@@ -38,5 +38,4 @@ Para configurar o ambiente utilizando os dotfiles, siga estas etapas:
   - [nvm](https://nodejs.org/en/download/package-manager)
   - [ohmyposh](https://ohmyposh.dev/docs/installation/linux)
   - [fzf](https://github.com/junegunn/fzf.git)
-  - [pokemon-colorscripts](https://gitlab.com/phoneybadger/pokemon-colorscripts#installation)
   - composer - package manager
