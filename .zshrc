@@ -5,7 +5,6 @@ export XDG_DATA_DIRS="/var/lib/flatpak/exports/share:/home/gnalmeida/.local/shar
 #ohmyposh
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
-export PATH="$PATH:$HOME/.dotnet/tools"
 
 #dotnet
 export PATH="$HOME/.dotnet/tools:$PATH"
