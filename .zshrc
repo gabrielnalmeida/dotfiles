@@ -69,6 +69,7 @@ alias la='exa -a'
 alias ll='exa -alh'
 alias tree='exa --tree'
 alias c='clear'
+alias vim='nvim'
 alias docker-info="docker ps --format '{{.ID}}' | xargs -I {} docker inspect --format '{\"NOME\": \"{{.Name}}\", \"IP\": \"{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}\", \"PORTA\": \"{{range .NetworkSettings.Ports}}{{(index . 0).HostPort}}{{end}}\"}' {}"
 
 # Shell integrations
