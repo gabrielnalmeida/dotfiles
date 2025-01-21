@@ -28,9 +28,7 @@ Para configurar o ambiente utilizando os dotfiles, siga estas etapas:
     sudo pacman -S stow
     ```
     ```
-    stow .zshrc
-    stow .vimrc
-    stow .gitconfig
+    stow myenv 
     stow ohmyposh
     stow nvim
     stow hyprland
