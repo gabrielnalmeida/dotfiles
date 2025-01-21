@@ -24,19 +24,54 @@ Para configurar o ambiente utilizando os dotfiles, siga estas etapas:
    git clone git@github.com:gabrielnalmeida/dotfiles.git ~/.dotfiles
 
 2. Crie Links Simoólicos
-    
     ```
-    ln -s ~/.dotfiles/.zshrc ~/.zshrc
-    ln -s ~/.dotfiles/.vimrc ~/.vimrc
-    ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
-    ln -s ~/.dotfiles/ohmyposh ~/.config/ohmyposh
-    ln -s ~/.dotfiles/nvim ~/.config/nvim
+    sudo pacman -S stow
+    ```
+    ```
+    stow .zshrc
+    stow .vimrc
+    stow .gitconfig
+    stow ohmyposh
+    stow nvim
+    stow hyprland
     ```
 
 3. Requirements
-  - zoxide - package manager
-  - eza - package manager
-  - [nvm](https://nodejs.org/en/download/package-manager)
-  - [ohmyposh](https://ohmyposh.dev/docs/installation/linux)
-  - [fzf](https://github.com/junegunn/fzf.git)
-  - composer - package manager
+  - ### environment
+    - neovim - package manager
+    - git-delta - package manager
+    ```
+    sudo pacman -S neovim git-delta
+    ```
+  - ### .zshrc
+    - zoxide - package manager
+    - eza - package manager
+    - composer - package manager
+    ```
+    sudo pacman -S eza zoxide composer
+    ```
+    - [nvm](https://nodejs.org/en/download/package-manager)
+    ```
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+    ```
+    - [ohmyposh](https://ohmyposh.dev/docs/installation/linux)
+    ```
+    curl -s https://ohmyposh.dev/install.sh | bash -s
+    ```
+    - [fzf](https://github.com/junegunn/fzf.git)
+    ```
+    git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+    ~/.fzf/install
+    ```
+
+
+  - ### hyprland
+    -  kitty - package manager
+    - waybar - package manager
+    - hypridle - package manager
+    - hyprlock - package manager
+    - hyprpaper - package manager
+    - hyprshot - package manager
+    ```
+    sudo pacman -S swaync kitty hypridle hyprlock hyprpaper hyprshot
+    ```
