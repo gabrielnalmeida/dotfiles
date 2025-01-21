@@ -4,7 +4,7 @@ Bem-vindo ao repositório de dotfiles! Este repositório contém minhas configur
 
 ## Objetivo
 
-Este repositório fornece uma configuração padronizada para meus ambientes de desenvolvimento, incluindo configurações para o shell `zsh`, o sistema de controle de versão `git`, e o Oh My Posh para personalização do prompt do terminal.
+Este repositório fornece uma configuração padronizada para meus ambientes de desenvolvimento, incluindo configurações para o shell `zsh`, o sistema de controle de versão `git`, e o zinit para personalização do prompt do terminal.
 
 ## Estrutura do Repositório
 
