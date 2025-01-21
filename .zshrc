@@ -73,7 +73,7 @@ alias vim='nvim'
 alias docker-info="docker ps --format '{{.ID}}' | xargs -I {} docker inspect --format '{\"NOME\": \"{{.Name}}\", \"IP\": \"{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}\", \"PORTA\": \"{{range .NetworkSettings.Ports}}{{(index . 0).HostPort}}{{end}}\"}' {}"
 
 # Shell integrations
-[ -f /home/gnalmeida/.fzf.zsh ] && source /home/gnalmeida/.fzf.zsh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(zoxide init --cmd cd zsh)"
 
 export NVM_DIR="$HOME/.nvm"
