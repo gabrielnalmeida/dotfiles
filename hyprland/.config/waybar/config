@@ -1,208 +1,91 @@
 {
-    "position": "top",
-    "spacing": 0, 
-    "margin-top": 4,
-    "modules-left": ["clock#date", "custom/updates"],
-    "modules-center": ["hyprland/workspaces"],
-    "modules-right": ["cpu", "memory", "pulseaudio","clock"],
-    "custom/updates": {
-        "exec": "checkupdates | wc -l",
-	"format": "󰮯 {} pending updates",
-	"interval": 60 
-    },
-    "clock": {
-        "format": "󰥔 {:%I:%M%p}",
-    	"height": 26
-    },
-    "clock#date": {
-	"format": " {:%A, %b %d}"
-    },
-    "cpu": {
-        "format": " {usage}%",
-        "tooltip": false
-    },
-    "memory": {
-        "format": " {}%"
-    },
-    "hyprland/workspaces": {
-        "format": "{icon}",
-        "on-click": "activate",
-	"active-only": false,
-	"all-outputs": true,
-	"format-icons": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
-	          "6": "",
-            "urgent": ""
-       },
-   },
-   "pulseaudio": {
+  "position": "top",
+  "spacing": 0,
+  "margin-top": 4,
+  "modules-left": [
+    "custom/launcher",
+    "cpu",
+    "memory",
+    "cava"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "pulseaudio",
+    "clock"
+  ],
+  "clock": {
+    "tooltip": true,
+    "interval": 60,
+    "format": "󰥔 {:%H:%M %p   %d-%m}"
+  },
+  "cpu": {
+    "interval": 15,
+    "format": "  {}%",
+    "max-length": 10
+  },
+  "memory": {
+    "interval": 30,
+    "format": "  {used}G",
+    "max-length": 10
+  },
+  "custom/launcher": {
+    "format": " ",
+    "on-click": "$HOME/.config/rofi/launcher.sh",
+    "on-click-right": "killall rofi"
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "active-only": false,
+    "all-outputs": true,
+    "format-icons": {
+      "1": "",
+      "2": "",
+      "3": "",
+      "4": "",
+      "5": "",
+      "6": "",
+      "urgent": ""
+    }
+  },
+  "pulseaudio": {
     "format": "󰓃 {volume}%",
     "format-icons": {
-        "headphone": "",
-        "default": ["", ""]
+      "headphone": "",
+      "default": [
+        "",
+        ""
+      ]
     },
     "scroll-step": 1,
     "on-click": "pavucontrol",
-    "ignored-sinks": ["Easy Effects Sink"]
-},
-   "sort-by-number": true
+    "ignored-sinks": [
+      "Easy Effects Sink"
+    ]
+  },
+  "cava": {
+    "cava_config": "$HOME/.config/cava/config",
+    "framerate": 144,
+    "autosens": 20,
+    "bars": 9,
+    "method": "pipewire",
+    "source": "auto",
+    "bar_delimiter": 0,
+    "input_delay": 2,
+    "sleep_timer": 0,
+    "hide_on_silence": true,
+    "format-icons": [
+      "▁",
+      "▂",
+      "▃",
+      "▄",
+      "▅",
+      "▆",
+      "▇",
+      "█"
+    ]
+  },
+  "sort-by-number": true
 }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -65,11 +65,16 @@ Para configurar o ambiente utilizando os dotfiles, siga estas etapas:
 
   - ### hyprland
     -  kitty - package manager
-    - waybar - package manager
+    - waybar - Repository
     - hypridle - package manager
     - hyprlock - package manager
     - hyprpaper - package manager
     - hyprshot - package manager
     ```
     sudo pacman -S swaync kitty hypridle hyprlock hyprpaper hyprshot
+    ```
+    ```
+    git clone https://aur.archlinux.org/waybar-git.git 
+    # change cava to enable in the PKGBUILD
+    makepkg -si
     ```
