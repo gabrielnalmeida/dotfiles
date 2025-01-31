@@ -8,6 +8,7 @@ export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
 #dotnet
 export PATH="$HOME/.dotnet/tools:$PATH"
+export PATH=$PATH:/usr/share/dotnet
 
 # Download Zinit, if it's not there yet
 if [ ! -d "$ZINIT_HOME" ]; then
