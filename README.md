@@ -62,6 +62,13 @@ Para configurar o ambiente utilizando os dotfiles, siga estas etapas:
     ~/.fzf/install
     ```
 
+  - ### SDDM
+    ```bash
+    sudo pacman -Sy sddm qt5-graphicaleffects qt5-svg qt5-quickcontrols2
+    ```
+    ```
+    sudo cp -r ~/.dotfiles/sddm/boo /usr/share/sddm/themes && sudo cp ~/.dotfiles/sddm/sddm.conf /etc
+    ```
 
   - ### hyprland
     -  kitty - package manager
