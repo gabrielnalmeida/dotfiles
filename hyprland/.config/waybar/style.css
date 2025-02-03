@@ -12,8 +12,10 @@
   color: #a6adc8;
 }
 
+
 window#waybar {
-  background-color: transparent;
+  background-color: #232136;
+  border-radius: 10px;
 }
 
 window#waybar.hidden {
@@ -21,8 +23,7 @@ window#waybar.hidden {
 }
 
 #workspaces button {
-  padding: 0 5px 0 10px;
-  background-color: transparent;
+  padding: 0 4px;
   color: #6e6a86;
   transition-property: color;
   transition-duration: 0.35s;
@@ -53,10 +54,7 @@ window#waybar.hidden {
 #memory,
 #pulseaudio {
   padding: 0 15px;
-  margin-right: 8px;
-  border-radius: 10px;
-  border: 2px solid #c4a7e7;
-  background-color: #232136;
+  margin-right: 4px;
 }
 
 #custom-launcher {
@@ -66,19 +64,14 @@ window#waybar.hidden {
   border-radius: 8px;
   transition: none;
   color: #c4a7e7;
-  background: transparent;
 }
 
 #cava {
   font-size: 13;
   margin-right: 8px;
   padding: 0 10px;
-  border-radius: 10px;
-  border: 2px solid #c4a7e7;
   transition: none;
-  background-color: #232136;
   color: #c4a7e7;
-  background: transparent;
 }
 
 /* Individual Widget Styles */
