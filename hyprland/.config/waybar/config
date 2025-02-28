@@ -17,6 +17,7 @@
   ],
   "modules-right": [
     "pulseaudio",
+    "battery",
     "clock"
   ],
   "clock": {
@@ -66,6 +67,14 @@
     "ignored-sinks": [
       "Easy Effects Sink"
     ]
+  },
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-charging": "⚡ {capacity}%",
+    "format-plugged": "🔌 {capacity}%",
+    "format-full": "🔋 {capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "tooltip": true
   },
   "cava": {
     "cava_config": "$HOME/.config/cava/config",

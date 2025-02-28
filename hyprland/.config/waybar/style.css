@@ -101,6 +101,14 @@ window#waybar.hidden {
   color: #3e8fb0;
 }
 
+#battery.charging {
+  color: #3e8fb0;
+}
+
+#battery.discharging {
+  color: #ea9a97;
+}
+
 /* Pulseaudio Widget */
 #pulseaudio {
   color: #9ccfd8;
