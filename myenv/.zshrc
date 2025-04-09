@@ -35,8 +35,7 @@ zinit snippet OMZP::command-not-found
 autoload -U compinit && compinit -u
 zinit cdreplay -q
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/zen.toml)"
+eval "$(starship init zsh)"
 
 #Keybindings
 bindkey -e

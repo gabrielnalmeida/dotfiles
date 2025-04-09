@@ -52,9 +52,9 @@ Para configurar o ambiente utilizando os dotfiles, siga estas etapas:
     ```
     curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
     ```
-    - [ohmyposh](https://ohmyposh.dev/docs/installation/linux)
+    - [starship](https://starship.rs/)
     ```
-    curl -s https://ohmyposh.dev/install.sh | bash -s
+    curl -sS https://starship.rs/install.sh | sh
     ```
     - [fzf](https://github.com/junegunn/fzf.git)
     ```
