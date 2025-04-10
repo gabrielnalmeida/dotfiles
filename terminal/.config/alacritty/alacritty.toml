@@ -1,0 +1,31 @@
+[env]
+TERM = "xterm-256color"
+
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/vesper.toml"
+]
+
+[window]
+dimensions = { columns = 120, lines = 35 }
+padding.x = 10
+padding.y = 10
+
+decorations = "None"
+
+opacity = 0.8
+blur = true
+
+[font]
+normal.family = "MesloLGS Nerd Font Mono"
+size = 15
+
+[[keyboard.bindings]]
+key = "F11"
+action = "ToggleFullscreen"
+
+[[keyboard.bindings]]
+key = "W"
+mods = "Control|Shift"
+action = "Quit"
+
