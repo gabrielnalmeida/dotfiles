@@ -66,9 +66,9 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
-alias ls='exa'
-alias la='exa -a'
-alias ll='exa -alh'
+alias ls='eza --color=always --long --git --no-filesize --icons=always --no-time --no-user --no-permissions'
+alias la='ls -la'
+alias ll='eza -alh'
 alias tree='exa --tree'
 alias c='clear'
 alias vim='nvim'
