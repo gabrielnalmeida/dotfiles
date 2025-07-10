@@ -35,6 +35,10 @@ zinit snippet OMZP::command-not-found
 autoload -U compinit && compinit -u
 zinit cdreplay -q
 
+#Kubectl Completions
+source <(kubectl completion zsh)
+
+#Starship
 eval "$(starship init zsh)"
 
 #Keybindings
