@@ -10,7 +10,7 @@ Este repositório fornece uma configuração padronizada para meus ambientes de 
 
 - `~/.dotfiles/.zshrc`: Configuração para o shell `zsh`, incluindo plugins, aliases, e opções de personalização.
 - `~/.dotfiles/.gitconfig`: Configuração global do Git, incluindo informações do usuário e aliases de comandos.
-- `~/.dotfiles/ohmyposh`: Configuração para o Oh My Posh, que altera a aparência do prompt do terminal.
+- `~/.dotfiles/starship`: Configuração para o Oh My Posh, que altera a aparência do prompt do terminal.
 
 ## Instalação
 
@@ -29,24 +29,19 @@ Para configurar o ambiente utilizando os dotfiles, siga estas etapas:
     ```
     ```
     stow myenv 
-    stow ohmyposh
+    stow starship
     stow nvim
-    stow hyprland
+    stow alacritty
     ```
 
 3. Requirements
-  - ### environment
-    - neovim - package manager
-    - git-delta - package manager
-    ```
-    sudo pacman -S neovim git-delta
-    ```
   - ### .zshrc
     - zoxide - package manager
     - eza - package manager
-    - composer - package manager
+    - neovim - package manager
+    - git-delta - package manager
     ```
-    sudo pacman -S eza zoxide composer
+    sudo pacman -S eza zoxide neovim git-delta
     ```
     - [nvm](https://nodejs.org/en/download/package-manager)
     ```
@@ -60,28 +55,4 @@ Para configurar o ambiente utilizando os dotfiles, siga estas etapas:
     ```
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
     ~/.fzf/install
-    ```
-
-  - ### SDDM
-    ```bash
-    sudo pacman -Sy sddm qt5-graphicaleffects qt5-svg qt5-quickcontrols2
-    ```
-    ```
-    sudo cp -r ~/.dotfiles/sddm/boo /usr/share/sddm/themes && sudo cp ~/.dotfiles/sddm/sddm.conf /etc
-    ```
-
-  - ### hyprland
-    -  kitty - package manager
-    - waybar - Repository
-    - hypridle - package manager
-    - hyprlock - package manager
-    - hyprpaper - package manager
-    - hyprshot - package manager
-    ```
-    sudo pacman -S swaync kitty hypridle hyprlock hyprpaper hyprshot
-    ```
-    ```
-    git clone https://aur.archlinux.org/waybar-git.git 
-    # change cava to enable in the PKGBUILD
-    makepkg -si
     ```
