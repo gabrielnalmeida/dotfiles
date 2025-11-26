@@ -56,3 +56,15 @@ Para configurar o ambiente utilizando os dotfiles, siga estas etapas:
     git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
     ~/.fzf/install
     ```
+4. Gnome Extensions
+  - [AppIndicator and KStatusNotifierItem Support](https://extensions.gnome.org/extension/615/appindicator-support/) 
+  - [ArcMenu](https://extensions.gnome.org/extension/3628/arcmenu/)
+  - [Blur My Shell](https://extensions.gnome.org/extension/3193/blur-my-shell/?ref=itsfoss.com)
+  - [Clipboard History](https://extensions.gnome.org/extension/4839/clipboard-history/)
+  - [Dash To Dock](https://extensions.gnome.org/extension/307/dash-to-dock/)
+  - [GSConnect](https://extensions.gnome.org/extension/1319/gsconnect/)
+  - [JustPerfection](https://extensions.gnome.org/extension/3843/just-perfection/)
+  - [Unblank](https://extensions.gnome.org/extension/1414/unblank/)
+  - [Vitals](https://extensions.gnome.org/extension/1460/vitals/)
+  - [User Themes](https://extensions.gnome.org/extension/19/user-themes/)
+
