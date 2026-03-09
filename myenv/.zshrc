@@ -10,6 +10,9 @@ export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 export PATH="$HOME/.dotnet/tools:$PATH"
 export PATH=$PATH:/usr/share/dotnet
 
+#docker
+FPATH="$HOME/.docker/completions:$FPATH"
+
 # Download Zinit, if it's not there yet
 if [ ! -d "$ZINIT_HOME" ]; then
     echo "ZINIT não encontrado. Instalando..."
@@ -79,9 +82,19 @@ alias vim='nvim'
 alias docker-info="docker ps --format '{{.ID}}' | xargs -I {} docker inspect --format '{\"NOME\": \"{{.Name}}\", \"IP\": \"{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}\", \"PORTA\": \"{{range .NetworkSettings.Ports}}{{(index . 0).HostPort}}{{end}}\"}' {}"
 
 # Shell integrations
+#fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(zoxide init --cmd cd zsh)"
 
+#nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+#pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init - zsh)"
+
+# opencode
+export PATH=/home/gnalmeida/.opencode/bin:$PATH
