@@ -1,0 +1,25 @@
+# Tema
+theme = Vesper
+
+# Term
+# term = xterm-256color
+
+# Janela
+window-width = 120
+window-height = 35
+
+window-padding-x = 10
+window-padding-y = 10
+
+window-decoration = none
+
+background-opacity = 0.8
+background-blur = true
+
+# Font
+font-family = "MesloLGS Nerd Font Mono"
+font-size = 15
+
+# Keybindings
+keybind = f11=toggle_fullscreen
+keybind = ctrl+shift+w=quit
