@@ -98,3 +98,10 @@ eval "$(pyenv init - zsh)"
 
 # opencode
 export PATH=/home/gnalmeida/.opencode/bin:$PATH
+
+# bun completions
+[ -s "/home/gnalmeida/.bun/_bun" ] && source "/home/gnalmeida/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
