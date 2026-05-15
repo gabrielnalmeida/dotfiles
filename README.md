@@ -80,15 +80,19 @@ Para configurar o ambiente utilizando os dotfiles, siga estas etapas:
   - Pi `curl -fsSL https://pi.dev/install.sh | sh`
 6. Pi Extensions
   - pi-markdown-preview
-  - @aliou/pi-processes
-  - @juicesharp/rpiv-todo
-  - @juicesharp/rpiv-ask-user-question
+  - pi-cursor-theme
   - pi-lens
-  - pi-rtk-optimizer
-  - @juicesharp/rpiv-web-tools
+  - @juicesharp/rpiv-ask-user-question
+  - @juicesharp/rpiv-todo
   - @juicesharp/rpiv-advisor
   - @juicesharp/rpiv-pi
-  - @tintinweb/pi-subagents
+  - @juicesharp/rpiv-web-tools
   - @juicesharp/rpiv-btw
+  - pi-studio
+  - @tintinweb/pi-subagents
   - @juicesharp/rpiv-i18n
   - @juicesharp/rpiv-args
+  - @aliou/pi-processes
+  - pi-rtk-optimizer
+  - pi-subagents
+
